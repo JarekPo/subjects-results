@@ -1,0 +1,30 @@
+body{
+	background-image:url("../images/bg.jpg");
+	font-family:helvetica;
+	color:#9e9d90;
+	text-shadow: 2px 0 1px;
+}
+.container{
+	max-width:1440px;
+	text-align:center;
+	margin: 30px auto;
+}
+#btn{
+	font-size: 1.2rem;
+	background-color:#33312f;
+	padding: 20px;
+	color: #e16a61;
+	border-radius:15px;
+	border: none;
+	
+}
+#btn:hover{
+	background-color:#413f3d;
+	box-shadow: 2px;
+	color: #d78a84;
+}
+#placeholder{
+	color:#e16a61;
+	font-weight:bold;
+	font-size: 2rem;
+}
