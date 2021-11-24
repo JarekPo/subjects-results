@@ -4,7 +4,7 @@ function checkResults(){
 	var sumMarks=0;
 	var average;
 	var grade;
-	numSubjects=parseFloat(prompt("Enter number of subjects"));
+	numSubjects=parseInt(prompt("Enter number of subjects"));
 	if(numSubjects>0){
 		for(i=1;i<=numSubjects;i++){
 			subjectMark=parseFloat(prompt("Enter "+i+" subject result"));
