@@ -4,10 +4,12 @@ function checkResults(){
 	var sumMarks=0;
 	var average;
 	var grade;
+	var resultsArray=[];
 	numSubjects=parseInt(prompt("Enter number of subjects"));
 	if(numSubjects>0){
 		for(i=1;i<=numSubjects;i++){
 			subjectMark=parseFloat(prompt("Enter "+i+" subject result"));
+			resultsArray[i-1]=subjectMark;
 			sumMarks+=subjectMark;
 		}
 		average=sumMarks/numSubjects;
@@ -29,7 +31,8 @@ function checkResults(){
 		else if(average>=80){
 			grade="A";
 		}
-		document.getElementById("placeholder").innerHTML="Your result is "+average.toFixed(2)+"%, your grade is "+grade;
+		document.getElementById("resultsArray").innerHTML="Your results breakdown: "+resultsArray.toString();
+		document.getElementById("overallResult").innerHTML="Your overall result is "+average.toFixed(2)+"%, your grade is "+grade;
 		document.getElementById("btn").innerHTML="Try again";
 	}
 }
